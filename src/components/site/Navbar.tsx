@@ -1,5 +1,3 @@
-import { Link } from "@tanstack/react-router";
-
 import { useEffect, useState } from "react";
 import { Menu as MenuIcon, X } from "lucide-react";
 import { OrderModal } from "./OrderModal";
@@ -15,13 +13,13 @@ const links = [
 function BrandPill({ size = "md" }: { size?: "sm" | "md" }) {
   const isSm = size === "sm";
   return (
-    <Link to="/" className="flex items-center group" aria-label="Snaxia home">
+    <a href="/" className="flex items-center group" aria-label="Snaxia home">
       <img
         src="/snaxia-logo.png"
         alt="Snaxia logo"
         className={`object-contain rounded-full ${isSm ? "h-11 w-11" : "h-14 w-14"}`}
       />
-    </Link>
+    </a>
   );
 }
 

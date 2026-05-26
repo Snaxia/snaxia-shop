@@ -5,20 +5,20 @@ export function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoplay, setIsAutoplay] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
-  const autoplayTimerRef = useRef<NodeJS.Timeout | null>(null);
-  const resumeTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const autoplayTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const resumeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const CAROUSEL_IMAGES = [
-    "/snaxia%20carousel%20images/1.jpeg",
-    "/snaxia%20carousel%20images/2.jpeg",
-    "/snaxia%20carousel%20images/3.jpeg",
-    "/snaxia%20carousel%20images/4.jpeg",
-    "/snaxia%20carousel%20images/5.jpeg",
-    "/snaxia%20carousel%20images/6.jpeg",
-    "/snaxia%20carousel%20images/7.jpeg",
-    "/snaxia%20carousel%20images/8.jpeg",
-    "/snaxia%20carousel%20images/9.jpeg",
-    "/snaxia%20carousel%20images/10.jpeg",
+    "/snaxia-carousel-images/1.jpeg",
+    "/snaxia-carousel-images/2.jpeg",
+    "/snaxia-carousel-images/3.jpeg",
+    "/snaxia-carousel-images/4.jpeg",
+    "/snaxia-carousel-images/5.jpeg",
+    "/snaxia-carousel-images/6.jpeg",
+    "/snaxia-carousel-images/7.jpeg",
+    "/snaxia-carousel-images/8.jpeg",
+    "/snaxia-carousel-images/9.jpeg",
+    "/snaxia-carousel-images/10.jpeg",
   ];
 
   // Autoplay effect

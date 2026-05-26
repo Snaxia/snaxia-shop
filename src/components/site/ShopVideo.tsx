@@ -5,7 +5,7 @@ export function ShopVideo() {
         <div className="relative rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-glow glass border border-white/20 bg-white/5 p-2 animate-fade-up">
           <div className="relative aspect-video w-full rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden bg-black/20">
             <video
-              src="/snaxia%20shop%20video/snacks%20final%20reel%20Corrected.mp4"
+              src="/snaxia-shop-video/snacks-final-reel-corrected.mp4"
               autoPlay
               loop
               muted
